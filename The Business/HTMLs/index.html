@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>mywebsite | drawApp</title>
+    <link href="../StyleSheets/index.css" rel="stylesheet">
+
 </head>
 <body>
-Test
+<div id="toolbar">
+    <div id="rad">
+        Line Width <span id="radval">10</span>
+        <div id="incrad" class="radControls">+</div>
+        <div id ="decrad" class="radControls">-</div>
+    </div>
+    <div id="colorPalette">
+        <div class="colorFrame active" style="background-color: yellow"></div>
+        <div class="colorFrame" style="background-color: white"></div>
+        <div class="colorFrame" style="background-color: black"></div>
+        <div class="colorFrame" style="background-color: green"></div>
+        <div class="colorFrame" style="background-color: red"></div>
+        <div class="colorFrame" style="background-color: blue"></div>
+    </div>
+    <div id="toolbarSpacerRight"></div>
+    <div id="toolbarSpacerLeft"></div>
+</div>
+
+<canvas id="canvas">
+</canvas>
+
+
 </body>
-</html>
+<script src="../JavaScripts/drawApp.js" language="JavaScript"></script>
+<script src="../JavaScripts/radius.js" language="JavaScript"></script>
+<script src="../JavaScripts/colors.js" language="JavaScript"></script>
